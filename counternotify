@@ -1,0 +1,92 @@
+
+#!/bin/bash
+#===========================================================================================================
+#                  FILE: counternotify.sh
+#                  USAGE: ./counternotify.sh
+#   DESCRIPTION: Use this script - input info to generate
+#                a DMCA Counter Notification. Print and mail unless they take
+#                a digital version. Simple script - no error checking. If you reside outside the USA, 
+#                 additional jurisdiction statement needed.
+#
+#   AUTHOR: Marcia Wilbur aka commander-midnight
+#   CREATED: 03/13/2017 01:23:01 AM
+#   REVISION: 0.1
+#===========================================================================================================
+
+echo "Enter the following fields:"
+echo""
+echo "Date"
+read date
+echo ""
+echo "ISP (or provider)"
+read isp
+echo ""
+echo "ISP Address"
+read ispaddy
+echo ""
+echo "DMCA Agent Name, where applicable"
+read DMCAagent
+echo ""
+
+echo "What is your full legal name"
+read name
+echo ""
+echo "Address"
+read address
+echo ""
+echo "City"
+read city
+echo ""
+echo "State"
+read state
+echo ""
+echo "Country"
+read country
+echo ""
+echo "Phone number"
+read phone
+echo ""
+echo "Email address"
+read port25
+echo ""
+
+echo "Identify the content that was removed or where access was disabled."
+read contentrm
+echo ""
+
+echo "Identify the location where the content appeared before it was removed or access disabled."
+read locationrm
+echo ""
+
+echo "-------------------------------------------------------------------------------------------------"                         
+echo ""
+echo "$date"
+echo "$isp"
+echo "$ispaddy"
+echo "$DMCAagent"
+echo""
+echo "To Whom It May Concern, This is a counter-notification as authorized in § 512(g) of the U.S. Copyright Law. In good faith, the material that was removed or disabled as a result of the Notice of Infringement was a result of mistake or misidentification of the material. I respectfully request that access be enabled and any removed content, be replaced to the following:"
+echo ""
+echo "$contentrm"
+echo "$locationrm"
+echo ""
+echo "My contact information is as follows:"
+echo "$name"
+echo "$address"
+echo "$city"
+echo "$country"
+echo "$phone"
+echo "$port25"
+echo "$materialrd"
+echo ""
+echo "I consent to the jurisdiction of Federal District Court for the judicial district in which the address is located and I agree to accept service of process from the person who provided notification under subsection (c)(1)(C) or an agent thereof."
+echo ""
+echo "I have a good faith belief that the material removed or disabled following the Notice of Infringement was removed or disabled because of mistake or misidentification of the material. I therefore request that the material be replaced and/or no longer disabled."
+echo ""
+echo "I declare under the perjury laws of the United States of America that this notification is true and correct."
+echo ""
+echo "Signature"
+
+
+
+echo "-------------------------------------------------------------------------------------------------"
